@@ -66,9 +66,9 @@ public void verifyInvalidLoginPageErrorMsg() throws InterruptedException
 	WebElement invalidErrorMsg = driver.findElement(By.xpath("//*[contains(text(),'Your password is incorrect')]"));
                String text = invalidErrorMsg.getText();
                System.out.println(text);
-               Thread.sleep(4000);
 Assert.assertEquals(text, "Your password is incorrect1111");
 Thread.sleep(2000);
+System.out.println("Successfully Validated");
 }
 
 	
